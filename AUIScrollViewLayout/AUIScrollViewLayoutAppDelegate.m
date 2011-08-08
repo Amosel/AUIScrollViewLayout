@@ -8,7 +8,7 @@
 
 #import "AUIScrollViewLayoutAppDelegate.h"
 
-#import "AUIScrollViewLayoutViewController.h"
+#import "RootViewController.h"
 
 @implementation AUIScrollViewLayoutAppDelegate
 
@@ -20,9 +20,9 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-        self.viewController = [[AUIScrollViewLayoutViewController alloc] initWithNibName:@"AUIScrollViewLayoutViewController_iPhone" bundle:nil]; 
+        self.viewController = [[RootViewController alloc] initWithNibName:@"RootViewController_iPhone" bundle:nil]; 
     } else {
-        self.viewController = [[AUIScrollViewLayoutViewController alloc] initWithNibName:@"AUIScrollViewLayoutViewController_iPad" bundle:nil]; 
+        self.viewController = [[RootViewController alloc] initWithNibName:@"RootViewController_iPad" bundle:nil]; 
     }
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];

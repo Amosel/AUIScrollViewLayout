@@ -8,12 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@class AUIScrollViewLayoutViewController;
+@class RootViewController;
 
 @interface AUIScrollViewLayoutAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
-@property (strong, nonatomic) AUIScrollViewLayoutViewController *viewController;
+@property (strong, nonatomic) RootViewController *viewController;
 
 @end

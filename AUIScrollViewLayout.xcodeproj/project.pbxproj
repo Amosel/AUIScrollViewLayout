@@ -13,9 +13,13 @@
 		E67915F513F0A11000894413 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E67915F313F0A11000894413 /* InfoPlist.strings */; };
 		E67915F713F0A11000894413 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E67915F613F0A11000894413 /* main.m */; };
 		E67915FB13F0A11000894413 /* AUIScrollViewLayoutAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E67915FA13F0A11000894413 /* AUIScrollViewLayoutAppDelegate.m */; };
-		E67915FE13F0A11000894413 /* AUIScrollViewLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E67915FD13F0A11000894413 /* AUIScrollViewLayoutViewController.m */; };
-		E679160113F0A11000894413 /* AUIScrollViewLayoutViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = E67915FF13F0A11000894413 /* AUIScrollViewLayoutViewController_iPhone.xib */; };
-		E679160413F0A11000894413 /* AUIScrollViewLayoutViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = E679160213F0A11000894413 /* AUIScrollViewLayoutViewController_iPad.xib */; };
+		E67915FE13F0A11000894413 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E67915FD13F0A11000894413 /* RootViewController.m */; };
+		E679160113F0A11000894413 /* RootViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = E67915FF13F0A11000894413 /* RootViewController_iPhone.xib */; };
+		E679160413F0A11000894413 /* RootViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = E679160213F0A11000894413 /* RootViewController_iPad.xib */; };
+		E679161413F0A59E00894413 /* AUIGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = E679161113F0A59E00894413 /* AUIGridView.m */; };
+		E679161513F0A59E00894413 /* AUIScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = E679161313F0A59E00894413 /* AUIScrollView.m */; };
+		E679161813F0A64700894413 /* README.markdown in Resources */ = {isa = PBXBuildFile; fileRef = E679161613F0A64600894413 /* README.markdown */; };
+		E679161913F0A64700894413 /* Source Code License.rtf in Resources */ = {isa = PBXBuildFile; fileRef = E679161713F0A64600894413 /* Source Code License.rtf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,16 +27,22 @@
 		E67915EA13F0A11000894413 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E67915EC13F0A11000894413 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E67915EE13F0A11000894413 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		E67915F213F0A11000894413 /* AUIScrollViewLayout-Info.plist */ = {isa = PBXFileReference; path = "AUIScrollViewLayout-Info.plist"; sourceTree = "<group>"; };
+		E67915F213F0A11000894413 /* AUIScrollViewLayout-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AUIScrollViewLayout-Info.plist"; sourceTree = "<group>"; };
 		E67915F413F0A11000894413 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E67915F613F0A11000894413 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		E67915F813F0A11000894413 /* AUIScrollViewLayout-Prefix.pch */ = {isa = PBXFileReference; path = "AUIScrollViewLayout-Prefix.pch"; sourceTree = "<group>"; };
-		E67915F913F0A11000894413 /* AUIScrollViewLayoutAppDelegate.h */ = {isa = PBXFileReference; path = AUIScrollViewLayoutAppDelegate.h; sourceTree = "<group>"; };
+		E67915F813F0A11000894413 /* AUIScrollViewLayout-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AUIScrollViewLayout-Prefix.pch"; sourceTree = "<group>"; };
+		E67915F913F0A11000894413 /* AUIScrollViewLayoutAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AUIScrollViewLayoutAppDelegate.h; sourceTree = "<group>"; };
 		E67915FA13F0A11000894413 /* AUIScrollViewLayoutAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AUIScrollViewLayoutAppDelegate.m; sourceTree = "<group>"; };
-		E67915FC13F0A11000894413 /* AUIScrollViewLayoutViewController.h */ = {isa = PBXFileReference; path = AUIScrollViewLayoutViewController.h; sourceTree = "<group>"; };
-		E67915FD13F0A11000894413 /* AUIScrollViewLayoutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AUIScrollViewLayoutViewController.m; sourceTree = "<group>"; };
-		E679160013F0A11000894413 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/AUIScrollViewLayoutViewController_iPhone.xib; sourceTree = "<group>"; };
-		E679160313F0A11000894413 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/AUIScrollViewLayoutViewController_iPad.xib; sourceTree = "<group>"; };
+		E67915FC13F0A11000894413 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = RootViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		E67915FD13F0A11000894413 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = RootViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		E679160013F0A11000894413 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RootViewController_iPhone.xib; sourceTree = "<group>"; };
+		E679160313F0A11000894413 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RootViewController_iPad.xib; sourceTree = "<group>"; };
+		E679161013F0A59E00894413 /* AUIGridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AUIGridView.h; sourceTree = "<group>"; };
+		E679161113F0A59E00894413 /* AUIGridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AUIGridView.m; sourceTree = "<group>"; };
+		E679161213F0A59E00894413 /* AUIScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AUIScrollView.h; sourceTree = "<group>"; };
+		E679161313F0A59E00894413 /* AUIScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AUIScrollView.m; sourceTree = "<group>"; };
+		E679161613F0A64600894413 /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.markdown; sourceTree = "<group>"; };
+		E679161713F0A64600894413 /* Source Code License.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "Source Code License.rtf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +62,8 @@
 		E67915DB13F0A11000894413 = {
 			isa = PBXGroup;
 			children = (
+				E679161613F0A64600894413 /* README.markdown */,
+				E679161713F0A64600894413 /* Source Code License.rtf */,
 				E67915F013F0A11000894413 /* AUIScrollViewLayout */,
 				E67915E913F0A11000894413 /* Frameworks */,
 				E67915E713F0A11000894413 /* Products */,
@@ -81,10 +93,11 @@
 			children = (
 				E67915F913F0A11000894413 /* AUIScrollViewLayoutAppDelegate.h */,
 				E67915FA13F0A11000894413 /* AUIScrollViewLayoutAppDelegate.m */,
-				E67915FC13F0A11000894413 /* AUIScrollViewLayoutViewController.h */,
-				E67915FD13F0A11000894413 /* AUIScrollViewLayoutViewController.m */,
-				E67915FF13F0A11000894413 /* AUIScrollViewLayoutViewController_iPhone.xib */,
-				E679160213F0A11000894413 /* AUIScrollViewLayoutViewController_iPad.xib */,
+				E67915FC13F0A11000894413 /* RootViewController.h */,
+				E67915FD13F0A11000894413 /* RootViewController.m */,
+				E679160E13F0A56800894413 /* Views */,
+				E67915FF13F0A11000894413 /* RootViewController_iPhone.xib */,
+				E679160213F0A11000894413 /* RootViewController_iPad.xib */,
 				E67915F113F0A11000894413 /* Supporting Files */,
 			);
 			path = AUIScrollViewLayout;
@@ -99,6 +112,17 @@
 				E67915F813F0A11000894413 /* AUIScrollViewLayout-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E679160E13F0A56800894413 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E679161013F0A59E00894413 /* AUIGridView.h */,
+				E679161113F0A59E00894413 /* AUIGridView.m */,
+				E679161213F0A59E00894413 /* AUIScrollView.h */,
+				E679161313F0A59E00894413 /* AUIScrollView.m */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +151,7 @@
 		E67915DD13F0A11000894413 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastUpgradeCheck = 0420;
 				ORGANIZATIONNAME = UIMUI;
 			};
 			buildConfigurationList = E67915E013F0A11000894413 /* Build configuration list for PBXProject "AUIScrollViewLayout" */;
@@ -152,8 +177,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E67915F513F0A11000894413 /* InfoPlist.strings in Resources */,
-				E679160113F0A11000894413 /* AUIScrollViewLayoutViewController_iPhone.xib in Resources */,
-				E679160413F0A11000894413 /* AUIScrollViewLayoutViewController_iPad.xib in Resources */,
+				E679160113F0A11000894413 /* RootViewController_iPhone.xib in Resources */,
+				E679160413F0A11000894413 /* RootViewController_iPad.xib in Resources */,
+				E679161813F0A64700894413 /* README.markdown in Resources */,
+				E679161913F0A64700894413 /* Source Code License.rtf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,7 +193,9 @@
 			files = (
 				E67915F713F0A11000894413 /* main.m in Sources */,
 				E67915FB13F0A11000894413 /* AUIScrollViewLayoutAppDelegate.m in Sources */,
-				E67915FE13F0A11000894413 /* AUIScrollViewLayoutViewController.m in Sources */,
+				E67915FE13F0A11000894413 /* RootViewController.m in Sources */,
+				E679161413F0A59E00894413 /* AUIGridView.m in Sources */,
+				E679161513F0A59E00894413 /* AUIScrollView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,20 +210,20 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		E67915FF13F0A11000894413 /* AUIScrollViewLayoutViewController_iPhone.xib */ = {
+		E67915FF13F0A11000894413 /* RootViewController_iPhone.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				E679160013F0A11000894413 /* en */,
 			);
-			name = AUIScrollViewLayoutViewController_iPhone.xib;
+			name = RootViewController_iPhone.xib;
 			sourceTree = "<group>";
 		};
-		E679160213F0A11000894413 /* AUIScrollViewLayoutViewController_iPad.xib */ = {
+		E679160213F0A11000894413 /* RootViewController_iPad.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				E679160313F0A11000894413 /* en */,
 			);
-			name = AUIScrollViewLayoutViewController_iPad.xib;
+			name = RootViewController_iPad.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
